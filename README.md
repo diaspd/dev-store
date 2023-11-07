@@ -11,7 +11,7 @@
 ---
 
 <div align="center">
-  <img alt="project image" title="" src="./src/assets/template.svg" />
+  <img alt="project image" title="" src="./public/template.svg" />
 </div> 
 
 <br></br>
