@@ -34,7 +34,7 @@ export function Header() {
             className="w-6 h-6 rounded-full"
             width={24}
             height={24}
-            alt="Profile picture"
+            alt=""
             src="https://github.com/diaspd.png"
           />
         </Link>
