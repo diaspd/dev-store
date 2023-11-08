@@ -4,13 +4,13 @@ import Image from 'next/image'
 
 export function Header() {
   return (
-    <div className="flex items-center justify-between">
-      <div className="flex items-center gap-5">
+    <div className="flex lg:flex-row flex-col items-center lg:justify-between gap-8">
+      <div className="flex items-center gap-5 pr-2 self-start lg:self-auto">
         <Link href="/" className="text-2xl font-extrabold text-white">
           devstore
         </Link>
 
-        <form className="flex w-[320px] items-center gap-3 rounded-full bg-zinc-900 px-5 py-3 ring-700">
+        <form className="flex max-w-xs lg:max-w-none lg:w-[320px] items-center gap-3 rounded-full bg-zinc-900 px-5 py-3 ring-700">
           <Search className="w-5 h-5 text-zinc-500" />
 
           <input
@@ -20,7 +20,7 @@ export function Header() {
         </form>
       </div>
 
-      <div className="flex items-center gap-4">
+      <div className="flex self-start lg:self-auto items-center gap-4">
         <div className="flex items-center gap-2">
           <ShoppingBag className="h-4 w-4" />
           <span className="text-sm">Cart (0)</span>
