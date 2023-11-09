@@ -19,7 +19,7 @@ export default async function Home() {
   const [highlightedProduct, ...otherProducts] = await getFeaturedProducts()
 
   return (
-    <div className="flex flex-col lg:grid max-h-[860px] max-w-4/6 lg:max-w-none grid-cols-9 grid-rows-6 gap-6">
+    <div className="flex flex-col lg:grid max-h-app max-w-4/6 lg:max-w-none grid-cols-9 grid-rows-6 gap-6">
       <Link
         href={`/product/${highlightedProduct.slug}`}
         className="col-span-6 relative group row-span-6 rounded-lg bg-zinc-900 overflow-hidden flex justify-center items-baseline"
@@ -33,7 +33,7 @@ export default async function Home() {
           alt=""
         />
 
-        <div className="absolute bottom-10 lg:bottom-28 right-10 lg:right-28 h-12 flex items-center gap-2 max-w-[280px] rounded-full border-2 border-zinc-500 pl-5 p-1 bg-black/80 ">
+        <div className="absolute bottom-10 lg:bottom-28 right-10 lg:right-28 h-12 flex items-center gap-2 max-w-product-description rounded-full border-2 border-zinc-500 pl-5 p-1 bg-black/80 ">
           <span className="text-sm truncate">{highlightedProduct.title}</span>
 
           <span className="flex h-full items-center justify-center rounded-full bg-violet-500 px-4 font-semibold whitespace-nowrap">
@@ -63,7 +63,7 @@ export default async function Home() {
               alt=""
             />
 
-            <div className="absolute bottom-10 right-10 h-12 flex items-center gap-2 max-w-[280px] rounded-full border-2 border-zinc-500 pl-5 p-1 bg-black/80 ">
+            <div className="absolute bottom-10 right-10 h-12 flex items-center gap-2 max-w-product-description rounded-full border-2 border-zinc-500 pl-5 p-1 bg-black/80 ">
               <span className="text-sm truncate">{product.title}</span>
 
               <span className="flex h-full items-center justify-center rounded-full bg-violet-500 px-4 font-semibold whitespace-nowrap">

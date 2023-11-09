@@ -18,6 +18,11 @@ const config: Config = {
 
       maxWidth: {
         app: '1600px',
+        'product-description': '280px',
+      },
+
+      maxHeight: {
+        app: '860px',
       },
     },
   },
