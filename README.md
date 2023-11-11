@@ -37,7 +37,16 @@ $ npm install
 $ npm run dev
 ```
 
-The app will be available on `` 
+The app will be available on `http://localhost:3000` 
+
+</br>
+
+## Setting the app
+To connect to api you will need to create a `.env.local` file and add 
+
+```
+
+```
 
 <br></br>
 
@@ -46,6 +55,8 @@ The app will be available on ``
 This project was developed with the following technologies:
 <b>
 - Nextjs
+- TypeScript
+- TailwindCss
 </b>
 
 </br>
