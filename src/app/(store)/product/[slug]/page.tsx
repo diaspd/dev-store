@@ -32,6 +32,15 @@ export async function generateMetadata({
   }
 }
 
+export async function generateStaticParams() {
+  const response = await api('/products/featured')
+  const products: Product[] = await response.json()
+
+  return products.map((product) => {
+    return { slug: product.slug }
+  })
+}
+
 export default async function ProductPage({ params }: ProductProps) {
   const product = await getProduct(params.slug)
 
@@ -40,7 +49,7 @@ export default async function ProductPage({ params }: ProductProps) {
       <div className="col-span-2 overflow-hidden">
         <Image
           src={product.image}
-          className="transition-all duration-500 hover:scale-125"
+          className="transition-all duration-500 active:scale-125 cursor-cell"
           width={1000}
           height={1000}
           quality={100}
