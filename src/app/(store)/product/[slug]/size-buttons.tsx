@@ -2,7 +2,7 @@
 
 import * as ToggleGroup from '@radix-ui/react-toggle-group'
 
-export function ButtonSizes() {
+export function SizeButtons() {
   return (
     <ToggleGroup.Root type="single" className="flex gap-2">
       <ToggleGroup.Item

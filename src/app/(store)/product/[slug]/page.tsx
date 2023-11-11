@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { ButtonSizes } from './buttonSizes'
+import { SizeButtons } from './size-buttons'
 import { api } from '@/data/api'
 import { Product } from '@/data/types/product'
 import { Metadata } from 'next'
@@ -86,7 +86,7 @@ export default async function ProductPage({ params }: ProductProps) {
           <span className="block font-semibold">Tamanhos</span>
 
           <div className="flex gap-2">
-            <ButtonSizes />
+            <SizeButtons />
           </div>
         </div>
 
