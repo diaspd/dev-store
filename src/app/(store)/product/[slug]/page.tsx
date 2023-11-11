@@ -36,10 +36,11 @@ export default async function ProductPage({ params }: ProductProps) {
   const product = await getProduct(params.slug)
 
   return (
-    <div className="relative grid max-h-app grid-cols-3">
+    <div className="flex flex-col relative lg:grid max-h-app grid-cols-3">
       <div className="col-span-2 overflow-hidden">
         <Image
           src={product.image}
+          className="transition-all duration-500 hover:scale-125"
           width={1000}
           height={1000}
           quality={100}
