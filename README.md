@@ -45,7 +45,7 @@ The app will be available on `http://localhost:3000`
 To connect to api you will need to create a `.env.local` file and add 
 
 ```
-
+NEXT_PUBLIC_API_BASE_URL="http://localhost:3000"
 ```
 
 <br></br>
