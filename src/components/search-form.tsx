@@ -27,7 +27,11 @@ export function SearchForm() {
 
   return (
     <div className="max-w-xs lg:max-w-none lg:w-[320px] items-center rounded-full bg-zinc-900 px-5 py-3 ring-700 focus-within:ring-2 focus-within:ring-zinc-400">
-      <form onSubmit={handleSearch} className="flex gap-3 border-none">
+      <form
+        autoComplete="off"
+        onSubmit={handleSearch}
+        className="flex gap-3 border-none"
+      >
         <label htmlFor="query">
           <Search className="w-5 h-5 text-zinc-500" />
         </label>
@@ -37,7 +41,7 @@ export function SearchForm() {
           id="query"
           defaultValue={query ?? ''}
           placeholder="Buscar produtos..."
-          className="flex-1 bg-transparent text-sm outline-none placeholder:text-zinc-500 rounded"
+          className="flex-1 fill-none bg-transparent text-sm outline-none placeholder:text-zinc-500 rounded"
           required
         />
       </form>
