@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { env } from '@/env'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
     template: '%s | devstore',
     default: 'devstore',
   },
+  metadataBase: new URL(env.APP_URL),
 }
 
 export default function RootLayout({
