@@ -57,6 +57,7 @@ This project was developed with the following technologies:
 - Nextjs
 - TypeScript
 - TailwindCss
+- Cypress
 </b>
 
 </br>
