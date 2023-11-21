@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@radix-ui/react-toggle-group": "^1.0.4",
+    "@t3-oss/env-nextjs": "^0.7.1",
     "install": "^0.13.0",
     "lucide-react": "^0.292.0",
     "next": "13.5.6",
