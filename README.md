@@ -46,6 +46,7 @@ To connect to api you will need to create a `.env.local` file and add
 
 ```
 NEXT_PUBLIC_API_BASE_URL="http://localhost:3000"
+APP_URL="http://localhost:3000"
 ```
 
 <br></br>
@@ -63,7 +64,7 @@ This project was developed with the following technologies:
 </br>
 
 ## 📄 Project
-💰 Project made to learn new features of next 13 as open graph images, server components, client components, data feching etc.
+💰 Project made to learn new features of next 13 as open graph images, server components, client components, data feching, SSR, SSG and etc.
 
 </br>
 
