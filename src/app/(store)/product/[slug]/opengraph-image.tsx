@@ -47,16 +47,18 @@ export default async function OgImage({
           flexDirection: 'column',
         }}
       >
-        <img
-          src={productImageURL}
-          style={{
-            width: '100%',
-            border: '4px solid',
-            borderRadius: '10px',
-            borderColor: colors.zinc[100],
-          }}
-          alt=""
-        />
+        <picture>
+          <img
+            src={productImageURL}
+            style={{
+              width: '100%',
+              border: '4px solid',
+              borderRadius: '10px',
+              borderColor: colors.zinc[100],
+            }}
+            alt=""
+          />
+        </picture>
       </div>
     ),
     {
