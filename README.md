@@ -64,7 +64,7 @@ This project was developed with the following technologies:
 </br>
 
 ## 📄 Project
-💰 Project made to learn new features of next 13 as open graph images, server components, client components, data feching, SSR, SSG and etc.
+💰 Project made to learn new features of next 13 as open graph images, server components, client components, data feching, tests, SSR, SSG and etc.
 
 </br>
 
