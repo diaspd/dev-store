@@ -11,7 +11,11 @@
 ---
 
 <div align="center">
-  <img alt="project image" title="" src="./public/template.svg" />
+  <img alt="project image" title="project image" src="./public/template.svg" />
+</div> 
+
+<div align="center">
+  <img alt="project gif" title="project gif" src="./public/template.gif" />
 </div> 
 
 <br></br>
